@@ -1,11 +1,24 @@
 .content {
   font-family: Myriad Pro;
-  background-color: rgba(31, 31, 46, .4);
+  background-color: rgba(31, 31, 46, .8);
   padding-top: 25px;
   color: white;
-  display: inline-block;
   font-size: 16px;
-  margin-bottom: 10px;
+  margin: -2.5% 10% 5% 10%;
+  border-bottom: 5px solid black;
+}
+
+#footerNav {
+  margin-left: -10%;
+}
+#footerNav a{
+  color: black !important;
+}
+
+.searchBar {
+  margin-left: 40%;
+  border-color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .timeCreated, .submitter {
@@ -36,35 +49,26 @@ a, a:hover, a:active, a:visited {
   font-size: 10px;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-}
-
 .text-muted {
+  color: white;
   padding-right: 25px;
 }
 
 .logo {
-  height: 100px;
-  width: 150px;
-}
-
-.nav {
-  margin-top: 30px;
+  height: 35px;
+  width: 60px;
 }
 
 body {
-  padding-top: 20px;
+  padding: 20px 0 20px 0;
   padding-bottom: 20px;
-  display: flex;
-  background-image: url('../brick.png');
-  flex-direction: column;
+  margin: 0 auto;
+  background-image: url('../images/brick.png');
   background-color: rgba(56, 70, 77, .8)
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
+header,
 .marketing,
 .footer {
   padding-left: 15px;
@@ -111,26 +115,27 @@ body {
 
 /* Custom page header */
 header {
-  border-bottom: 1px solid #e5e5e5;
-  background-color: #38464D;
+  background-color: black;
   color: white;
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  justify-content: space-between;
-  border-right: 5px solid black;
+  height: 3em;
+  margin: 1% 10% 0 10%;
 }
 
 /* Make the masthead heading the same height as the navigation */
 header h3 {
-  margin-top: 0;
+  margin: 0 0 0 75%;
   margin-bottom: 0;
-  line-height: 40px;
-  padding-bottom: 19px;
+  line-height: 1em;
 }
 
 header a {
   color: white;
+  background-image: none;
+}
+
+header a:hover {
+  background-color: black;
+  text-decoration: none !important;
 }
 
 .submit  {
@@ -152,7 +157,7 @@ header a {
 }
 
 .container-narrow > hr {
-  margin: 30px 0;
+  margin: 0 auto;
 }
 
 /* Main marketing message and sign up button */
@@ -186,7 +191,7 @@ header a {
   }
 
   /* Remove the padding we set earlier */
-  .header,
+  header,
   .marketing,
   .footer {
     padding-left: 0;
@@ -194,7 +199,7 @@ header a {
   }
 
   /* Space out the masthead */
-  .header {
+  header {
     margin-bottom: 30px;
   }
 

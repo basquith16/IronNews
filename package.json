@@ -36,5 +36,11 @@
         "single"
       ]
     }
+  },
+  "dependencies": {
+    "babel-core": "^5.8.34",
+    "gulp-sass": "^2.1.1",
+    "gulp-server-livereload": "^1.5.4",
+    "node-notifier": "^4.4.0"
   }
 }
