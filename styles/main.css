@@ -21,6 +21,17 @@
   color: rgba(0, 0, 0, 0.5);
 }
 
+li:hover {
+  background-image: none;
+  background-repeat: no-repeat;
+  background-color: none;
+}
+
+li:focus {
+  background-image: none;
+  background: transparent;
+}
+
 .timeCreated, .submitter {
   margin-left: 15px;
   margin-bottom: 10px;
@@ -32,10 +43,15 @@
 
 a, a:hover, a:active, a:visited {
   color: white;
+  background: transparent;
 }
 .articleDetails {
   display: flex;
   flex-direction: row;
+}
+
+.input {
+  color: black;
 }
 
 .browserupgrade {
